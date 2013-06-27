@@ -16,7 +16,7 @@ Para executar a PUCIoc:
 
 7. Descompacte o StreamDevice, através do comando "tar -zxvf StreamDevice-2-4.tgz"
 
-8. Dentro da pasta descompactada do StreamDevice, abra o arquivo src/devwaveformStream.c e adicione a seguinte biblioteca: "#include <errlog.h>"
+8. Dentro da pasta descompactada do StreamDevice, abra o arquivo src/devwaveformStream.c e adicione a biblioteca errlog.h
 
 9. Copie os arquivos da pasta "interface" do IOC para a pasta "src" do StreamDevice
 
