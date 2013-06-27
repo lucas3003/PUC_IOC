@@ -1,0 +1,39 @@
+Terminator = "";
+InTerminator = "";
+ReplyTimeout = 10000;
+ReadTimeout = 10000;
+
+getWave
+{
+   out "Wave?";
+   in "Wave %d";
+}
+
+leitura
+{
+   # $1 = Destino; $2 = Id variavel;   
+   out "LER_VARIAVEL \$1 \$2";
+   
+   in  "LEITURA_VARIAVEL \$1 %f";
+} 
+
+escrita
+{
+   # $1 = Destino; $2 = Tamanho; $3 = ID Variavel; %f = Valor
+   out "ESCREVER_VARIAVEL \$1 \$2 \$3 %f";     
+   in "OK \$1";
+}
+
+transmitir_bloco_curva
+{
+   # $1 = Destino; $2 = ID Curva; $3 = Offset bloco
+   out "TRANSMITIR_BLOCO_CURVA \$1 \$2 \$3";
+   in "BLOCO_CURVA \$2 \$3 %f";
+}
+
+bloco_curva
+{
+   # $1 = Destino; $2 = ID Curva; $3 = Offset bloco
+   out "BLOCO_CURVA \$1 \$2 \$3 % f ";
+   in "OK \$1";
+}
